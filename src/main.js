@@ -15,17 +15,38 @@ Pseudocode:
 const readline = require("readline");
 
 function getTaxRate(income) {
+
+    let bracket;
+
     if (income < 500) {
-        return 0.10;
-    } 
+        bracket = 1;
+    }
     else if (income < 1500) {
-        return 0.15;
-    } 
+        bracket = 2;
+    }
     else if (income < 2500) {
-        return 0.20;
-    } 
+        bracket = 3;
+    }
     else {
-        return 0.30;
+        bracket = 4;
+    }
+
+    switch (bracket) {
+
+        case 1:
+            return 0.10;
+
+        case 2:
+            return 0.15;
+
+        case 3:
+            return 0.20;
+
+        case 4:
+            return 0.30;
+
+        default:
+            return 0;
     }
 }
 
