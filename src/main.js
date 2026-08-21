@@ -1,16 +1,20 @@
 /*
-----------------------------------------------
-Program Name: Weekly Average Tax Withholding
-Author: Cody Walker
-Date: 2026
-----------------------------------------------
-Pseudocode:
-1. Ask the user for weekly income.
-2. Determine tax rate using income brackets.
-3. Calculate withholding.
-4. Display results.
-----------------------------------------------
-*/
+ * Weekly Average Tax Withholding
+ *
+ * Pseudocode:
+ * 1. Ask the user for weekly income
+ * 2. Determine the tax rate using income brackets
+ * 3. Calculate the withholding amount
+ * 4. Display the results
+ *
+ * Program Input:
+ * - Weekly income entered by the user
+ *
+ * Program Outputs:
+ * - Weekly income
+ * - Tax rate
+ * - Weekly withholding amount
+ */
 
 const readline = require("readline");
 
